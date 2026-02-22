@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyword Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #newword {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: center;
+            color: #333;
+        }
+
+        #output {
+            margin-top: 15px;
+            font-size: 14px;
+            word-wrap: break-word;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Enter Keyword</h2>
+
+        <input type="text" id="wordInput" placeholder="Enter the keyword">
+        <button onclick="convertWord()">Submit</button>
+
+        <p id="newKeyword"></p>
+        <p id="output"></p>
+    </div>
+
+    <script>
+
+        const keyword = params.get("keyword");
+        
+        function convertWord() {
+            const word = document.getElementById("wordInput").value.toLowerCase();
+            let newWord = "";
+
+            for (let i = 0; i < word.length; i++) {
+                let character = word[i];
+                let asciiCode = character.charCodeAt(0);
+                let newCharacter = String.fromCharCode(asciiCode + i + 1);
+
+                newWord += newCharacter;
+
+            }
+
+            let newKeyword = "";
+
+            switch(newWord) {
+                case "admin":
+                    window.location.href = "war.html";
+                    newKeyword = "WAR";
+                    break;
+
+                case "teacher":
+                    window.location.href = "teacher.html";
+                    break;
+
+                case "student":
+                    window.location.href = "student.html";
+                    break;
+
+                default:
+                    window.location.href = "unknown.html";
+            }
+            
+            document.getElementById("newKeyword").innerHTML = "New Keyword: " + newKeyword;
+        }
+    </script>
+
+</body>
+</html>

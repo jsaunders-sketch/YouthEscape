@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bridge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+        }
+
+        header {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        #output {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            word-wrap: break-word;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+        }
+        .center-image {
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            max-width: 350px; 
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    Bridge
+</header>
+
+
+<main>
+    
+    
+    <div class="card">  
+        <img class="center-image" src="bridge.jpeg">
+
+        <br>
+        <p>
+            In the scriptures, we learn that Jesus Christ is our advocate with the Father, and although we make mistakes and are not worthy to be with God, if we turn to Him, He will plead our cause before the Father. He will bridge any gap we have in our life and His righteousness and grace will allow us to pass through. 
+            <br><br>What does it mean to you that Christ can help you overcome all things? 
+            <br>What do you think it will be like to return to the Father because of what Christ has done?
+
+            <br><br>Go across the bridge to find your next clue.
+
+        </p>
+
+        <h1 id="output"></h1>
+
+        <p style="color: red;text-align: center;"><br>SCREENSHOT THIS PAGE!</p>
+        
+    </div>
+</main>
+
+
+<script src="common.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const keyword = params.get("keyword");
+
+    //bridge page is page 6
+    const result = findNextWord(keyword,6);
+
+    console.log("Keyword:", keyword);
+    console.log("Result:", result);
+
+    if (!result) {
+        document.getElementById("output").innerHTML = 
+            "Couldn't find next keyword. Ask for help.";
+    }
+    else {
+        document.getElementById("output").textContent =
+            "Keyword #" + result.newKeyword;
+    }
+
+    
+</script>
+
+</body>
+</html>

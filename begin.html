@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Begin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        #newword {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: center;
+            color: #333;
+        }
+
+        #output {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4e73df;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+        }
+        .center-image {
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            max-width: 350px; 
+        }
+        
+    </style>
+</head>
+    
+<body>
+    
+    <header>
+        Walk With Me
+    </header>
+
+    <div class="container">
+        <img class="center-image" src="walk.png">
+    
+        <br>
+        <p> 
+            The youth theme this year is “Walk with me” (Moses 6:34), which is an invitation from Jesus Christ to more closely follow Him. 
+            <br>
+            <br>What does it mean to you to walk with Christ? 
+            <br>What things can you do in your life to come closer to Him and allow Him to bless you?<br>
+            <br>You’ll be walking through the park to find clues and solve puzzles, but try to also reflect on what it means to walk with the Savior.
+        </p>
+        
+        <h2>Enter the Keyword</h2>
+
+        <input type="text" id="wordInput" placeholder="Enter the keyword">
+        <button onclick="processWord()">Submit</button>
+
+        <p id="newKeyword"></p>
+        <h2 id="output"></h2>
+    </div>
+
+   <script src="common.js"></script>
+
+    <script>
+        function processWord() {
+
+        const word = document.getElementById("wordInput").value.toLowerCase();
+
+        const newWord = convertWord(word);
+
+        console.log(newWord);
+
+        //since we're on the begin page, startpage = 1    
+        const result = findNextPage(newWord, 1);
+
+        console.log(result);
+
+        if (!result) {
+        document.getElementById("output").innerHTML = 
+            "Invalid keyword. Please try again.";
+        return;
+        }
+        
+        //depending on the keyword, we'll know what clue to show next    
+
+        switch (result.pageNumber)
+        {
+            case 2:
+                window.location.href = "warclue.html?keyword=" + newWord;
+                break;
+            case 3:
+                window.location.href = "blockclue.html?keyword=" + newWord;
+                break;
+            case 4:
+                window.location.href = "lightclue.html?keyword=" + newWord;
+                break;
+            case 5:
+                window.location.href = "duckclue.html?keyword=" + newWord;
+                break;
+            case 6:
+                window.location.href = "bridgeclue.html?keyword=" + newWord;
+                break;
+            case 7:
+                window.location.href = "playclue.html?keyword=" + newWord;
+                break;
+            case 8:
+                window.location.href = "endclue.html?keyword=" + newWord;
+                break;
+            default:
+                document.getElementById("output").innerHTML = 
+                    "Unable to find the next clue. Ask for help.";
+        }
+        }
+    </script>
+
+</body>
+</html>
