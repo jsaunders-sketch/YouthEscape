@@ -16,7 +16,7 @@ const pages = [
   { keyWord: "tguzj", startPage: 3, pageNumber: 5, newKeyword: "5: FAITH" },
   { keyWord: "gclxm", startPage: 5, pageNumber: 6, newKeyword: "6: GREAT" },
   { keyWord: "hthey", startPage: 6, pageNumber: 7, newKeyword: "7: CHOSEN" },
-  { keyWord: "djrwjt", startPage: 7, pageNumber: 8, newKeyword: "" },
+  { keyWord: "djrwjt", startPage: 7, pageNumber: 8, newKeyword: "K5 -F-I-H, K1 -R-C-K, K7 -C-H-O-S-N, K3 -C-A-R" },
 
    //team3
   { keyWord: "gclv", startPage: 1, pageNumber: 3, newKeyword: "2: MEEK" }, //start with FAIR
@@ -25,7 +25,7 @@ const pages = [
   { keyWord: "utxxm", startPage: 4, pageNumber: 6, newKeyword: "5: GUIDE" },
   { keyWord: "hwlhj", startPage: 6, pageNumber: 5, newKeyword: "6: HEART" },
   { keyWord: "igdvy", startPage: 5, pageNumber: 7, newKeyword: "7: DIVINE" },
-  { keyWord: "ekymsk", startPage: 7, pageNumber: 8, newKeyword: "" },
+  { keyWord: "ekymsk", startPage: 7, pageNumber: 8, newKeyword: "K6 -H-E-R-T, K4 -R-U-T-H, K3 -G-O-D, K7 -D-I-V-I" },
 
     //team 4
   { keyWord: "mkii", startPage: 1, pageNumber: 7, newKeyword: "2: PURE" }, //start with LIFE
@@ -34,7 +34,7 @@ const pages = [
   { keyWord: "cthei", startPage: 5, pageNumber: 2, newKeyword: "5: JUDGE" },
   { keyWord: "kwgkj", startPage: 2, pageNumber: 4, newKeyword: "6: HONOR" },
   { keyWord: "iqqsw", startPage: 4, pageNumber: 3, newKeyword: "7: FOLLOW" },
-  { keyWord: "gqopt}", startPage: 3, pageNumber: 8, newKeyword: "" },
+  { keyWord: "gqopt}", startPage: 3, pageNumber: 8, newKeyword: "K4 -B-R-E-D, K3 -J-U-S, K6 -H-O-R, K2 -P-U-R" },
 
    //team 5
   { keyWord: "lkqh", startPage: 1, pageNumber: 5, newKeyword: "2: LOVE" }, //start with KIND
