@@ -10,8 +10,8 @@ const pages = [
   { keyWord: "bpfltx", startPage: 5, pageNumber: 8, newKeyword: "" },
 
     //team2
-  { keyWord: "sqfo", startPage: 1, pageNumber: 2, newKeyword: "2: FAIR" }, //start with ROCK
-  { keyWord: "gclv", startPage: 2, pageNumber: 4, newKeyword: "3: CARE" },
+  { keyWord: "sqfo", startPage: 1, pageNumber: 2, newKeyword: "2: GIFT" }, //start with ROCK
+  { keyWord: "hkix", startPage: 2, pageNumber: 4, newKeyword: "3: CARE" },
   { keyWord: "dcui", startPage: 4, pageNumber: 3, newKeyword: "4: SERVE" },
   { keyWord: "tguzj", startPage: 3, pageNumber: 5, newKeyword: "5: FAITH" },
   { keyWord: "gclxm", startPage: 5, pageNumber: 6, newKeyword: "6: GREAT" },
@@ -19,7 +19,7 @@ const pages = [
   { keyWord: "djrwjt", startPage: 7, pageNumber: 8, newKeyword: "" },
 
    //team3
-  { keyWord: "hkix", startPage: 1, pageNumber: 3, newKeyword: "2: MEEK" }, //start with GIFT
+  { keyWord: "gclv", startPage: 1, pageNumber: 3, newKeyword: "2: MEEK" }, //start with FAIR
   { keyWord: "ngho", startPage: 3, pageNumber: 2, newKeyword: "3: GOOD" },
   { keyWord: "hqrh", startPage: 2, pageNumber: 4, newKeyword: "4: TRUTH" },
   { keyWord: "utxxm", startPage: 4, pageNumber: 6, newKeyword: "5: GUIDE" },
@@ -55,8 +55,8 @@ const pages = [
   { keyWord: "hgqxqk", startPage: 2, pageNumber: 8, newKeyword: "" },
 
     //team 7
-  { keyWord: "gkqh", startPage: 1, pageNumber: 6, newKeyword: "2: SEEK" }, //start with FIND
-  { keyWord: "tgho", startPage: 6, pageNumber: 5, newKeyword: "3: WISE" },
+  { keyWord: "gkqh", startPage: 1, pageNumber: 6, newKeyword: "2: PRAY" }, //start with FIND
+  { keyWord: "qtd}", startPage: 6, pageNumber: 5, newKeyword: "3: WISE" },
   { keyWord: "xkvi", startPage: 5, pageNumber: 7, newKeyword: "4: FIRST" },
   { keyWord: "gkuwy", startPage: 7, pageNumber: 2, newKeyword: "5: KNOCK" },
   { keyWord: "lprgp", startPage: 2, pageNumber: 3, newKeyword: "6: NOBLE" },
@@ -64,8 +64,8 @@ const pages = [
   { keyWord: "iwpfqk", startPage: 4, pageNumber: 8, newKeyword: "" },
 
    //team 8
-  { keyWord: "iqo}", startPage: 1, pageNumber: 6, newKeyword: "2: PRAY" }, //start with HOLY
-  { keyWord: "qtd}", startPage: 6, pageNumber: 7, newKeyword: "3: CALM" },
+  { keyWord: "iqo}", startPage: 1, pageNumber: 6, newKeyword: "2: SEEK" }, //start with HOLY
+  { keyWord: "tgho", startPage: 6, pageNumber: 7, newKeyword: "3: CALM" },
   { keyWord: "dcoq", startPage: 7, pageNumber: 5, newKeyword: "4: GLORY" },
   { keyWord: "hnrv~", startPage: 5, pageNumber: 3, newKeyword: "5: KNEEL" },
   { keyWord: "lphiq", startPage: 3, pageNumber: 2, newKeyword: "6: PEACE" },
