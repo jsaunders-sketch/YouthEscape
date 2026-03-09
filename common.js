@@ -43,7 +43,7 @@ const pages = [
   { keyWord: "utxwy", startPage: 6, pageNumber: 4, newKeyword: "5: MERCY" },
   { keyWord: "ngug~", startPage: 4, pageNumber: 3, newKeyword: "6: MAKER" },
   { keyWord: "ncniw", startPage: 3, pageNumber: 2, newKeyword: "7: FRIEND" },
-  { keyWord: "gtlisj", startPage: 2, pageNumber: 8, newKeyword: "" },
+  { keyWord: "gtlisj", startPage: 2, pageNumber: 8, newKeyword: "K6 -M-K-E-R, K4 -R-U-S-T, K2 -L-V-E, K1 -K-I-D, K5 -M-R-C-Y" },
 
     //team 6
   { keyWord: "qcwl", startPage: 1, pageNumber: 5, newKeyword: "2: HEAL" }, //start with PATH
@@ -52,7 +52,7 @@ const pages = [
   { keyWord: "qqziw", startPage: 7, pageNumber: 3, newKeyword: "5: WATER" },
   { keyWord: "xcwiw", startPage: 3, pageNumber: 4, newKeyword: "6: MIGHT" },
   { keyWord: "nkjly", startPage: 4, pageNumber: 2, newKeyword: "7: GENTLE" },
-  { keyWord: "hgqxqk", startPage: 2, pageNumber: 8, newKeyword: "" },
+  { keyWord: "hgqxqk", startPage: 2, pageNumber: 8, newKeyword: "K1 -P-H, K4 -P-W-E-R, K7 -G-E-T-L-E, K2 -H-A-L" },
 
     //team 7
   { keyWord: "gkqh", startPage: 1, pageNumber: 6, newKeyword: "2: PRAY" }, //start with FIND
@@ -61,7 +61,7 @@ const pages = [
   { keyWord: "gkuwy", startPage: 7, pageNumber: 2, newKeyword: "5: KNOCK" },
   { keyWord: "lprgp", startPage: 2, pageNumber: 3, newKeyword: "6: NOBLE" },
   { keyWord: "oqepj", startPage: 3, pageNumber: 4, newKeyword: "7: HUMBLE" },
-  { keyWord: "iwpfqk", startPage: 4, pageNumber: 8, newKeyword: "" },
+  { keyWord: "iwpfqk", startPage: 4, pageNumber: 8, newKeyword: "K2 -P-R-Y, K4 -F-I-R-S, K5 -K-N-C-K, K6 -O-B-L" },
 
    //team 8
   { keyWord: "iqo}", startPage: 1, pageNumber: 6, newKeyword: "2: SEEK" }, //start with HOLY
@@ -70,7 +70,7 @@ const pages = [
   { keyWord: "hnrv~", startPage: 5, pageNumber: 3, newKeyword: "5: KNEEL" },
   { keyWord: "lphiq", startPage: 3, pageNumber: 2, newKeyword: "6: PEACE" },
   { keyWord: "qgdgj", startPage: 2, pageNumber: 4, newKeyword: "7: STRONG" },
-  { keyWord: "tvussm", startPage: 4, pageNumber: 8, newKeyword: "" }
+  { keyWord: "tvussm", startPage: 4, pageNumber: 8, newKeyword: "K6 -P-E-C-E, K7 -S-R-N-G, K5 -K-E-E-L, K2 -S-E-K" }
 ];
     
 
