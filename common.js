@@ -7,7 +7,7 @@ const pages = [
   { keyWord: "mkjly", startPage: 2, pageNumber: 7, newKeyword: "5: SOLID" },
   { keyWord: "tqomi", startPage: 7, pageNumber: 6, newKeyword: "6: GRACE" },
   { keyWord: "htdgj", startPage: 6, pageNumber: 5, newKeyword: "7: ANCHOR" },
-  { keyWord: "bpfltx", startPage: 5, pageNumber: 8, newKeyword: "\nK6 -G-R-C-E, \nK4 -L-I-G-H, \nK3 -H-P-E, \nK2 -A-R"},
+  { keyWord: "bpfltx", startPage: 5, pageNumber: 8, newKeyword: "K6 -G-R-C-E, K4 -L-I-G-H, K3 -H-P-E, K2 -A-R"},
 
     //team2
   { keyWord: "sqfo", startPage: 1, pageNumber: 2, newKeyword: "2: GIFT" }, //start with ROCK
@@ -16,7 +16,7 @@ const pages = [
   { keyWord: "tguzj", startPage: 3, pageNumber: 5, newKeyword: "5: FAITH" },
   { keyWord: "gclxm", startPage: 5, pageNumber: 6, newKeyword: "6: GREAT" },
   { keyWord: "hthey", startPage: 6, pageNumber: 7, newKeyword: "7: CHOSEN" },
-  { keyWord: "djrwjt", startPage: 7, pageNumber: 8, newKeyword: """\n"""K5 -F-I-H, """\n"""K1 -R-C-K, """\n"""K7 -C-H-O-S-E, """\n"""K3 -C-A-R" },
+  { keyWord: "djrwjt", startPage: 7, pageNumber: 8, newKeyword: "K5 -F-I-H, K1 -R-C-K, K7 -C-H-O-S-E, K3 -C-A-R" },
 
    //team3
   { keyWord: "gclv", startPage: 1, pageNumber: 3, newKeyword: "2: MEEK" }, //start with FAIR
