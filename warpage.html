@@ -56,6 +56,23 @@
             text-align: left;
         }
     
+#tableContainer {
+      width: 400px;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: none; /* remove table border */
+    }
+    td {
+      border: none; /* remove cell borders */
+      padding: 15px;
+      text-align: left;
+	font-size: 26px;
+	color: #555;  
+
+    }
 
        
     </style>
@@ -71,22 +88,40 @@
 <main>
     
     
-    <div class="card">  
+    <div class="card">          
 
-        <p>
-            FLARE &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp; X_72
-            <br>
-            <br>
-            RENNY &nbsp;&emsp;&emsp;&emsp;&emsp; A54_
-            <br>
-            <br>
-            MAJOR &nbsp;&emsp;&emsp;&emsp;&emsp; 91M_
-            <br>
-            <br>
-            NEMO &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp; A_34
-        </p>
+<div id="tableContainer"></div>
+
+<script>
+  const container = document.getElementById("tableContainer");
+  const table = document.createElement("table");
+
+  const data = [
+    ["FLARE", "X_72"],
+    ["RENNY", "A54_"],
+    ["MAJOR", "91M_"],
+    ["NEMO", "A_34"]
+  ];
+
+  data.forEach(rowData => {
+    const row = document.createElement("tr");
+
+    rowData.forEach(cellData => {
+      const cell = document.createElement("td");
+      cell.textContent = cellData;
+      row.appendChild(cell);
+    });
+
+    table.appendChild(row);
+  });
+
+  container.appendChild(table);
+</script>
+
         
     </div>
+
+
 </main>
 
 
